@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header class="bg-[url('./images/mobile/image-header.jpg')] sm:bg-[url('./images/desktop/image-header.jpg')] bg-no-repeat bg-center bg-cover sm:pb-48">
+    <div class="container mx-auto relative flex items-center px-6 py-8">
+      <img class="mr-auto" src="./images/logo.svg" alt="logo">
+      <ul id="nav" aria-hidden="true" class="aria-hidden:hidden flex flex-col  items-center absolute inset-x-4 top-20 bg-white text-[#a7abae] font-bold p-8 gap-8 sm:flex sm:flex-row sm:bg-transparent sm:text-white sm:font-semibold sm:static sm:p-0">
+        <li><a href="">About</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Projects</a></li>
+        <li class="font-serif text-[#23303e] py-5 px-7 rounded-full bg-[#fad400] sm:bg-white">CONTACT</li>
+      </ul>
+      <img id="nav-btn" class="sm:hidden cursor-pointer" src="./images/icon-hamburger.svg" alt="">
+    </div>
+    <div class="text-center py-16">
+      <h1 class="font-serif font-bold text-white text-5xl mb-8 sm:mb-16">WE ARE CREATIVES</h1>
+      <img class="mx-auto" src="./images/icon-arrow-down.svg" alt="">
+    </div>
+  </header>
+  <main>
+    <!-- since the first row has a direction of row reverse i'll be removing it from the main grid container -->
+    <div class="flex flex-col sm:flex-row-reverse">
+      <div class="h-[309px] sm:h-auto sm:basis-1/2 bg-[url('./images/mobile/image-transform.jpg')] sm:bg-[url('./images/desktop/image-transform.jpg')] bg-no-repeat bg-center bg-cover"></div>
+      <div class="py-12 px-6 text-center text-lg sm:basis-1/2 sm:text-left sm:pl-28 sm:pr-28 sm:py-40">
+        <h2 class="text-[#23303e] font-serif text-4xl sm:text-5xl font-bold mb-8">Transform your brand</h2>
+        <p class="text-[#a7abae] font-medium mb-8">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+        <a class="font-bold font-serif border-b-4 border-b-[#fad400]" href="#">LEARN MORE</a>
+      </div>
+    </div>
+    <div class="grid sm:grid-cols-2">
+      <div class="h-[309px] w-full bg-[url('./images/mobile/image-stand-out.jpg')] sm:bg-[url('./images/desktop/image-stand-out.jpg')] bg-no-repeat bg-center bg-cover sm:h-auto"></div>
+      <div class="py-12 px-6 text-center text-lg sm:text-left sm:pl-28 sm:pr-28 sm:py-40">
+        <h2 class="text-[#23303e] font-serif text-4xl font-bold mb-8">Stand out to the right audience</h2>
+        <p class="text-[#a7abae] font-medium mb-8">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+        <a class="font-bold font-serif border-b-4 border-b-[#fad400]" href="#">LEARN MORE</a>
+      </div>
+      <div  class="w-full bg-[url('./images/mobile/image-graphic-design.jpg')] sm:bg-[url('./images/desktop/image-graphic-design.jpg')] bg-no-repeat bg-top bg-cover pt-[390px] pb-12 text-center text-lg sm:px-40">
+        <h2 class="text-[#23303e] font-serif text-4xl font-bold mb-8">Graphic Design</h2>
+        <p class="text-[#23303e] font-medium mb-8">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+      </div>
+      <div  class="w-full bg-[url('./images/mobile/image-photography.jpg')] sm:bg-[url('./images/desktop/image-photography.jpg')] bg-no-repeat bg-top bg-cover pt-[390px] pb-12 text-center text-lg sm:px-40">
+        <h2 class="text-[#19536b] font-serif text-4xl font-bold mb-8">Photography</h2>
+        <p class="text-[#19536b] font-medium mb-8">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+      </div>
+    </div>
+    <div class="py-12">
+      <h2 style="letter-spacing: 4px;" class="text-[#a7abae] text-center font-serif font-bold mb-10">CLIENT TESTIMONIALS</h2>
+      <div class="flex flex-col gap-4 text-center sm:flex-row sm:items-center max-w-[993px] mx-auto">
+        <div class="px-11 sm:px-1">
+          <img class="mx-auto w-[50px] rounded-full mb-10" src="./images/image-emily.jpg" alt="">
+          <p class="text-[#23303e] mb-10">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+          <h3 class="text-[#23303e] font-serif font-bold">Emily R.</h3>
+          <p class="text-[#a7abae]">Marketing Director</p>
+        </div>
+        <div class="px-11 py-12 sm:px-1">
+          <img class="mx-auto w-[50px] rounded-full mb-10" src="./images/image-thomas.jpg" alt="">
+          <p class="text-[#23303e] mb-10">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+          <h3 class="text-[#23303e] font-serif font-bold">Thomas S.</h3>
+          <p class="text-[#a7abae]">Chief Operating Officer</p>
+        </div>
+        <div class="px-11 sm:px-1">
+          <img class="mx-auto w-[50px] rounded-full mb-10" src="./images/image-jennie.jpg" alt="">
+          <p class="text-[#23303e] mb-10">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          <h3 class="text-[#23303e] font-serif font-bold">Jennie F.</h3>
+          <p class="text-[#a7abae]">Business Owner</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-4">
+      <div class="bg-[url('./images/mobile/image-gallery-milkbottles.jpg')] sm:bg-[url('./images/desktop/image-gallery-milkbottles.jpg')] bg-no-repeat bg-center bg-cover h-[187px] sm:h-[376px]"></div>
+      <div class="bg-[url('./images/mobile/image-gallery-orange.jpg')] sm:bg-[url('./images/desktop/image-gallery-orange.jpg')] bg-no-repeat bg-center bg-cover h-[187px] sm:h-[376px]"></div>
+      <div class="bg-[url('./images/mobile/image-gallery-cone.jpg')] sm:bg-[url('./images/desktop/image-gallery-cone.jpg')] bg-no-repeat bg-center bg-cover h-[187px] sm:h-[376px]"></div>
+      <div class="bg-[url('./images/mobile/image-gallery-sugar-cubes.jpg')] sm:bg-[url('./images/desktop/image-gallery-sugarcubes.jpg')] bg-no-repeat bg-center bg-cover h-[187px] sm:h-[376px]"></div>
+    </div>
+  </main>
+  <footer class="bg-[#46dbbd] py-12 flex flex-col items-center">
+    <img class="mb-12" src="./images/logo - Copy.svg" alt="">
+    <ul class="flex gap-10 text-[#19536b] mb-14">
+      <li><a href="#">About</a></li>
+      <li><a href="">Services</a></li>
+      <li><a href="">Projects</a></li>
+    </ul>
+    <div class="flex gap-6">
+      <img src="./images/icon-facebook.svg" alt="">
+      <img src="./images/icon-instagram.svg" alt="">
+      <img src="./images/icon-twitter.svg" alt="">
+      <img src="./images/icon-pinterest.svg" alt="">
+    </div>
+  </footer>
+    <script src="./index.js"></script>
+</body>
+</html>
